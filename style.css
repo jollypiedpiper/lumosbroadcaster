@@ -141,3 +141,15 @@ a.f { display: block; } a.f:hover { border-color: var(--acc); }
 .who p { margin: 0; color: var(--ink2); font-size: 14px; }
 @media (max-width: 980px) { .for { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 640px) { .for { grid-template-columns: 1fr; } }
+
+/* statement band + training (round 5) */
+.state { background: linear-gradient(180deg, var(--bg2) 0%, var(--bg) 100%); padding: 96px 0; }
+.state h2.big { font-size: clamp(44px, 6vw, 88px); line-height: .95; }
+.state h2.big span { color: var(--acc); }
+.drops { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 40px; }
+.drops div { border-left: 3px solid var(--acc); padding: 4px 0 4px 18px; }
+.drops b { display: block; font-family: var(--cond); font-size: 24px; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 4px; }
+.drops p { margin: 0; color: var(--ink2); font-size: 15px; }
+.training { font-family: var(--cond); font-weight: 800; font-size: clamp(26px, 3vw, 40px); letter-spacing: .2em; color: var(--acc); margin: 44px auto 0 !important; }
+@media (max-width: 980px) { .drops { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .drops { grid-template-columns: 1fr; } }
