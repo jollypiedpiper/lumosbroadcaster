@@ -111,3 +111,16 @@ footer a { color: var(--ink2); }
   .products, .steps, .grid, .gallery { grid-template-columns: 1fr; }
   .nav a.link { display: none; }
 }
+
+/* pills + specs (round 2) */
+.pill-chip { display: inline-block; font-family: var(--cond); font-size: 15px; letter-spacing: .08em; padding: 3px 10px; border: 1.5px solid; border-radius: 999px; margin-bottom: 12px; background: #0b0b12; }
+.c-red { color: #ff6b6b; border-color: #ff6b6b; } .c-blue { color: #6fb3ff; border-color: #6fb3ff; } .c-purple { color: #c9a6ff; border-color: #c9a6ff; }
+.c-gold { color: #ffd23f; border-color: #ffd23f; } .c-green { color: #5fe3a1; border-color: #5fe3a1; }
+.grid.pills { grid-template-columns: repeat(5, 1fr); }
+.grid.pills .f { padding: 18px 16px 20px; } .grid.pills .f p { font-size: 14px; }
+.specs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.spec { background: var(--bg3); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
+.spec b { display: block; font-family: var(--cond); font-size: 20px; text-transform: uppercase; letter-spacing: .06em; color: var(--acc); margin-bottom: 6px; }
+.spec p { margin: 0; color: var(--ink2); font-size: 14.5px; }
+@media (max-width: 980px) { .grid.pills { grid-template-columns: repeat(2, 1fr); } .specs { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .grid.pills, .specs { grid-template-columns: 1fr; } }
